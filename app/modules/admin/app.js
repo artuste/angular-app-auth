@@ -16,8 +16,8 @@ angular.module('angular-client-side-auth', ['ngCookies', 'ui.router'])
                 }
             })
             .state('public.404', {
-                url: '/404/',
-                template: '<h1>404</h1>'
+                url: '/404',
+                template: '<h1>404</h1><h3>Not found</h3>'
             });
 
         // Anonymous routes
@@ -51,7 +51,7 @@ angular.module('angular-client-side-auth', ['ngCookies', 'ui.router'])
             })
             .state('user.home', {
                 url: '/',
-                templateUrl: 'app/modules/admin/home/tpl/home.tpl.html',
+                templateUrl: 'app/modules/admin/home/tpl/home.tpl.html'
             })
             .state('user.private', {
                 abstract: true,
