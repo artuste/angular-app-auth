@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="adminApp">
+<html ng-app="angular-client-side-auth">
 
 <head>
     <meta charset="utf-8">
@@ -33,7 +33,7 @@
 	<![endif]-->
 </head>
 
-<body>
+<body data-ng-cloak>
     <div id="main">
         <div id="header">
             <span class="logo"><span class="glyphicon glyphicon-user"></span> Admin</span>
@@ -43,7 +43,7 @@
 
         <div id="center">
             <div class="container">
-                <section ng-view></section>
+                <section data-ui-view></section>
             </div>
         </div>
     </div>
@@ -94,7 +94,9 @@
 
     <!-- ADMIN -->
     <script src="app/modules/admin/app.js"></script>
-    <script src="app/modules/admin/home/controllers/controllers.home.js"></script>
+    <script src="app/modules/admin/auth/config/routingConfig.js"></script>
+    <script src="app/modules/admin/auth/controllers/controllers.auth.js"></script>
+    <script src="app/modules/admin/auth/services/services.auth.js"></script>
 
     <!-- end AngularJS app files -->
 </body>

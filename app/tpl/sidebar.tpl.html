@@ -1,5 +1,8 @@
-<div id="sidebar">
-    <ul class="sidebar-menu" ng-controller="MenuCtrl">
-        <li><a href="#" ng-class="getPath('/home')"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
+<div id="sidebar" data-ng-controller="NavCtrl">
+    <ul class="sidebar-menu">
+        <li><a href="/" data-access-level="accessLevels.user" active-nav>Home</a></li>
+        <li><a href="/#/private" data-access-level="accessLevels.admin" active-nav="nestedTop">Private</a></li>
+        <li><a href="/#/login" data-access-level="accessLevels.anon" active-nav>Log in</a></li>
+        <li><a href data-ng-click="logout()" data-access-level="accessLevels.user" active-nav>Log Out</a></li>
     </ul>
 </div>

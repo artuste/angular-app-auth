@@ -46,6 +46,7 @@
     "angular-resource": "~1.2.19",
     "angular-translate": "~2.2.0",
     "html5shiv": "~3.7.2",
-    "respond": "~1.4.2"
+    "respond": "~1.4.2",
+    "angular-ui-router": "~0.2.10"
   }
 }
